@@ -34,7 +34,7 @@ The DataBase use `DnaSequence` to store all the dna sequences.
 *Implementd Commands:*
 
 
-Creation Commands: new, load and dup are described below, along with form of use.
+### Creation Commands: new, load and dup are described below, along with form of use.
 
 new <sequence> [@<sequence_name>] 
 Creates a new sequence. If the ​[@<sequence_name>] is given, then this will be the name of the new sequence, Otherwise, a default name will be provided. The new sequence, its name and its number are printed.
@@ -46,7 +46,7 @@ dup <seq> [@<new_seq_name>]
 duplicates the sequence. If [@<new_seq_name>] is not provided, then the new sequence name will be based on the name of ​<seq>.
 
  
-Manipulating Commands: slice and replace are described below, along with form of use.
+### Manipulating Commands: slice and replace are described below, along with form of use.
 
 slice <seq> <from_ind> <to_ind> [: [@<new_seq_name>|@@]]
 Slices the sequence, so that starts in <from_ind> and ends in <to_ind>.
@@ -59,7 +59,7 @@ If ​[@@] is provided, the name is based on the original sequence.
 The command might get more than a single replacement. In that case, after ​<seq> there will be more than one pair of ​<index> and ​<new_letter>
 
  
-Analysis Commands: find and findall are described below, along with form of use.
+### Analysis Commands: find and findall are described below, along with form of use.
  
 find <seq> <expressed_sub_seq> | find <seq_to_find_in> <seq_to_be_found>
 Returns the index of the first appearance of <expressed_sub_seq> in <seq>
@@ -70,7 +70,7 @@ Returns all the indices of appearances of <expressed_sub_seq> in <seq>
 Or returns all the indices of appearances of <seq_to_be_found> in <seq_to_find_in>, Depending on the data obtained
 
 
-Management Commands: del and save are described below, along with form of use.
+### Management Commands: del and save are described below, along with form of use.
 
 del <seq>
 deletes that sequence.
@@ -81,7 +81,7 @@ save <seq> [<filename>]
 saves sequence <seq> to a file. If [<filename>] is not provided, the sequence name is being used. The filename is suffixed by .rawdna
 
 
-Batch Commands: batchshow, batchlist and run are described below, along with form of use.
+### Batch Commands: batchshow, batchlist and run are described below, along with form of use.
  
 batchshow <batch_name>
 This command shows the content of that batch.

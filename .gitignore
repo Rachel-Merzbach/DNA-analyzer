@@ -1,0 +1,9 @@
+/venv
+/.idea
+/__pycache__
+/commands/__pycache__
+/commands/analysisCommands/__pycache__
+/commands/batchCommands/__pycache__
+/commands/creationCommands/__pycache__
+/commands/manipulationCommands/__pycache__
+/commands/managementCommands/__pycache__
